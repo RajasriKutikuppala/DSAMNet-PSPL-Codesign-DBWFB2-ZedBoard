@@ -1,0 +1,313 @@
+# ============================================================
+# DSAMNet PS/PL Codesign - Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# OS / Editor
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------
+# General temporary files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.orig
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+*.log
+*.jou
+*.str
+*.trace
+*.debug
+*.history
+
+# ------------------------------------------------------------
+# Build output
+# ------------------------------------------------------------
+build/
+Build/
+_debug/
+debug/
+release/
+Release/
+
+# ------------------------------------------------------------
+# C/C++ generated files
+# ------------------------------------------------------------
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+*.elf
+*.map
+
+# ------------------------------------------------------------
+# Vivado generated files
+# ------------------------------------------------------------
+*.bit
+*.bin
+*.ltx
+*.mmi
+*.xsa
+*.dcp
+*.edf
+*.rpt
+*.pb
+*.xml
+
+# Vivado project-generated directories
+**/.Xil/
+**/*.cache/
+**/*.gen/
+**/*.runs/
+**/*.sim/
+**/*.hw/
+**/*.ip_user_files/
+**/*.sdk/
+**/*.synth/
+**/vivado_project/
+**/vivado_project.cache/
+**/vivado_project.gen/
+**/vivado_project.runs/
+**/vivado_project.sim/
+
+# Vivado generated project files
+*.jou
+*.str
+
+# ------------------------------------------------------------
+# Vitis generated directories
+# ------------------------------------------------------------
+**/.metadata/
+**/.settings/
+**/.cproject
+**/.project
+**/.externalToolBuilders/
+
+# Vitis workspace metadata
+**/_ide/.wsdata/
+**/_ide/.metadata/
+**/_ide/.settings/
+**/_ide/.vscode/
+
+# Vitis generated build/platform content
+**/platform/
+**/platforms/
+**/export/
+**/Debug/
+**/Release/
+
+# ------------------------------------------------------------
+# Vitis / Xilinx BSP and FSBL generated content
+# ------------------------------------------------------------
+**/*_bsp/
+**/zynq_fsbl/zynq_fsbl_bsp/
+**/zynq_fsbl/.cache/
+**/zynq_fsbl/build/
+**/zynq_fsbl/_ide/
+**/zynq_fsbl/.metadata/
+
+# Generated BSP build systems
+**/build_configs/
+**/.ninja_deps
+**/.ninja_log
+**/build.ninja
+**/cmake_install.cmake
+**/CMakeCache.txt
+**/CMakeFiles/
+
+# ------------------------------------------------------------
+# Xilinx generated drivers / generated hardware metadata
+# ------------------------------------------------------------
+**/hw_artifacts/
+**/libsrc/
+**/include/xparameters*.h
+**/include/xparameters*.c
+
+# ------------------------------------------------------------
+# HLS generated output
+# ------------------------------------------------------------
+**/.autopilot/
+**/solution*/syn/
+**/solution*/sim/
+**/solution*/impl/
+**/solution*/.autopilot/
+**/solution*/.cache/
+**/solution*/.Xil/
+**/solution*/syn/report/
+**/solution*/sim/report/
+
+# HLS generated files
+*.autopilot*
+*.jou
+*.log
+
+# ------------------------------------------------------------
+# Hardware generated databases
+# ------------------------------------------------------------
+*.wdb
+*.wcfg
+*.hwdef
+*.xpr.lock
+*.xsa.lock
+
+# ------------------------------------------------------------
+# Large generated data / model binaries
+# ------------------------------------------------------------
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# ------------------------------------------------------------
+# Dataset / raw data
+# ------------------------------------------------------------
+Data/
+data/
+dataset/
+datasets/
+
+# ------------------------------------------------------------
+# Generated application output
+# ------------------------------------------------------------
+*.csv
+*.jsonl
+
+# ------------------------------------------------------------
+# Temporary quarantine / scratch directories
+# ------------------------------------------------------------
+_quarantine*/
+**/_quarantine*/
+scratch/
+tmp/
+temp/
+
+# ------------------------------------------------------------
+# Media / recordings
+# ------------------------------------------------------------
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ------------------------------------------------------------
+# Large PDFs / documents
+# ------------------------------------------------------------
+*.pdf
+
+# ------------------------------------------------------------
+# Keep Git's own files
+# ------------------------------------------------------------
+!.gitignore
+# ============================================================
+# Vitis generated platform content
+# ============================================================
+
+# Generated BSPs
+**/DSAMNet_Platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/
+**/DBWFB2_Platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/
+
+# Generated FSBL projects
+**/DSAMNet_Platform/zynq_fsbl/
+**/DBWFB2_Platform/zynq_fsbl/
+
+# Generated SDT/BSP artifacts
+**/DSAMNet_Platform/hw/sdt/
+**/DBWFB2_Platform/hw/sdt/
+
+# Generated Vitis platform metadata
+**/DSAMNet_Platform/.metadata/
+**/DBWFB2_Platform/.metadata/
+
+# Generated platform build directories
+**/DSAMNet_Platform/build/
+**/DBWFB2_Platform/build/
+
+# ============================================================
+# Vitis IDE generated metadata
+# ============================================================
+**/DSAMNet_App/_ide/.wsdata/
+**/DBWFB2_App/_ide/.wsdata/
+
+# ============================================================
+# Generated compile database
+# ============================================================
+**/compile_commands.json
+
+# ============================================================
+# Generated linker/build metadata
+# ============================================================
+**/Makefile
+
+# ============================================================
+# Additional generated Vitis / platform content
+# ============================================================
+
+# Generated Vitis BSPs
+**/DSAMNet_Platform/**/bsp/
+**/DBWFB2_Platform/**/bsp/
+
+# Generated SDT output
+**/DSAMNet_Platform/**/hw/sdt/
+**/DBWFB2_Platform/**/hw/sdt/
+
+# Generated FSBL projects
+**/DSAMNet_Platform/**/zynq_fsbl/
+**/DBWFB2_Platform/**/zynq_fsbl/
+
+# ============================================================
+# HLS generated implementation/synthesis output
+# ============================================================
+
+**/PL_CBAM_HLS/**/hls/
+**/PL_CBAM_HLS/**/reports/
+**/PL_CBAM_HLS/**/*.zip
+
+# ============================================================
+# Temporary Git inspection files
+# ============================================================
+
+git_status.txt
+remaining_git_status.txt
+# HLS generated summary files
+**/*.hlscompile_summary
+**/*.hlsrun_csim_summary
+**/*.hlsrun_package_summary# Vitis workspace metadata and journals
+**/_ide/.peers.ini
+**/_ide/.vitisPlatformRepo.json
+**/_ide/settings.json
+**/_ide/version.ini
+**/_ide/workspace_journal*.py
+
+# HLS generated summary files
+**/*.hlscompile_summary
+**/*.hlsrun_csim_summary
+**/*.hlsrun_package_summary

@@ -1,0 +1,4 @@
+domain_path: C:\Users\HP\Desktop\BTP_RemoteSensing\DSAMNet_Filter_Codesign\DBWFB2_Platform\export\DBWFB2_Platform\sw\standalone_ps7_cortexa9_0
+app_src_dir: C:\AMDDesignTools2\2025.2\Vitis\data\embeddedsw\lib\sw_apps\empty_application
+template: empty_application
+lang: c
