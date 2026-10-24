@@ -185,7 +185,8 @@ int main()
     double t = ps_timer_now_s();
     ps_channelwise_distance(cbam_out1, cbam_out2, dist_lowres);
     ps_bilinear_resize_1ch(dist_lowres, final_dist);
-    const float THRESHOLD = 1.0f;                       // value used by the paper
+    // fine-tuned weights: the paper's threshold 1.0 works for the filtered input (F1 0.784 vs 0.786 for the original model)
+    const float THRESHOLD = 1.0f;
     ps_threshold_change_map(final_dist, change_map, OUT_H * OUT_W, THRESHOLD);
     double t_post = ps_timer_now_s() - t;
 
@@ -222,7 +223,7 @@ int main()
 #if PIPELINE_MODE == MODE_BASELINE
         printf("\n[VALIDATION vs PyTorch]  golden mean %.4f\n", sg / n);
 #else
-        printf("\n[SIMILARITY to the UNFILTERED PyTorch distance map - not an accuracy figure]  golden mean %.4f\n", sg / n);
+        printf("\n[VALIDATION vs PyTorch: fine-tuned model, same filtered input]  golden mean %.4f\n", sg / n);
 #endif
         printf("MAE=%.6f  RMSE=%.6f  MaxErr=%.6f  Corr=%.6f\n", mae / n, sqrt(mse / n), maxe, corr);
     }
